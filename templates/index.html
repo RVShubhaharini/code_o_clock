@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Call Intelligence — Partner Conversations</title>
+</head>
+<body>
+    <h1>AI Call Intelligence — Smarter Partner Conversations</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <h2>Step 1: Input</h2>
+        <label>
+            <input type="radio" name="mode" value="Upload WAV" checked> Upload WAV
+        </label>
+        <label>
+            <input type="radio" name="mode" value="Paste Transcript"> Paste Transcript
+        </label>
+        <br><br>
+        <input type="file" name="wav_file" accept=".wav">
+        <br><br>
+        <textarea name="manual_transcript" rows="10" cols="50" placeholder="Paste transcript here..."></textarea>
+        <br><br>
+        <input type="submit" value="Run Analysis">
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transcript Analysis</title>
+</head>
+<body>
+    <h1>Transcript Analysis & AI Feedback</h1>
+
+    <h2>Transcript</h2>
+    <textarea rows="10" cols="80">{{ transcript }}</textarea>
+
+    <h2>Sentiment Analysis</h2>
+    <p>Sentiment: {{ sentiment.label }} (score={{ sentiment.score }})</p>
+
+    <h2>AI Feedback</h2>
+    <pre>{{ feedback }}</pre>
+
+    <a href="{{ url_for('index') }}">⬅ Back</a>
+</body>
+</html>
